@@ -13,7 +13,7 @@ mkdir /root/distrib
 cd /root/distrib/
 
 # Download from GitHub prometheus
-curl -LO https://github.com/prometheus/prometheus/releases/download/v2.33.0/prometheus-2.33.0.linuxamd64.tar.gz
+curl -LO https://github.com/prometheus/prometheus/releases/download/v2.33.0/prometheus-2.33.0.linux-amd64.tar.gz
 
 # Unpack archive prometheus
 tar -xf ./prometheus-2.33.0.linux-amd64.tar.gz
