@@ -57,6 +57,19 @@ systemctl enable prometheus
 # Get prometheus status
 systemctl status prometheus
 
+# Go to directory distrib
+cd /root/distrib/
 
+# Download grafana
+curl -LO https://dl.grafana.com/oss/release/grafana-8.3.4-1.x86_64.rpm
+
+# Install grafana
+yum -y install /root/distrib/grafana-8.3.4-1.x86_64.rpm
+
+# Update daemon configure, start grafana, add grafana to autostart, get grafana status
+systemctl daemon-reload && systemctl start grafana-server && systemctl enable grafana-server && systemctl status grafana-server
+
+# Delete directory distrib
+rm -rf /root/distrib
 
 fi
