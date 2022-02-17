@@ -24,6 +24,9 @@ shutdown -r now
 # Enter with root
 sudo -i
 
+# For monitoring host may install jnettop, htop, iotop, iftop, iptraf, nmon
+# yum install -y {jnet,h,io,if}top iptraf nmon
+
 # Make pair keys
 ssh-keygen #Enter Enter Enter
 
