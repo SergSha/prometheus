@@ -46,7 +46,7 @@ chmod u+x /root/prometheus/inst_set.sh
 # Start inst_set.sh
 /root/prometheus/inst_set.sh
 
-# Open browser anter address <IP balancer>:3000
+# Open browser enter address <IP balancer>:3000
 # Login: admin
 # Password: admin
 # Skip
