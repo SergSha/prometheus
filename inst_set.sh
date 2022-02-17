@@ -38,7 +38,7 @@ cp -f /root/distrib/prometheus-2.33.0.linux-amd64/prom{etheus,tool} /usr/local/b
 cp -rf /root/distrib/prometheus-2.33.0.linux-amd64/{console{s,_libraries},prometheus.yml} /etc/prometheus/
 
 # Change user:group files /usr/local/bin/prometheus, /usr/local/bin/promtool and directory /etc/prometheus
-chown -Rv prometheus: /usr/local/bin/prom{etheus,tool} /etc/prometheus
+chown -Rv prometheus: /usr/local/bin/prom{etheus,tool} {/etc,/var/lib}/prometheus
 
 # Copy file prometheus.service into directory /etc/systemd/system for make service prometheus
 cp -f /root/prometheus/prometheus.service /etc/systemd/system/
