@@ -6,6 +6,10 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 else
 
+# Firewalld stop
+systemctl disable firewalld
+systemctl stop firewalld
+
 # Create directory distrib
 mkdir /root/distrib
 
