@@ -2,7 +2,7 @@
 sudo -i
 
 # Rename host
-hostnamectl set-hostname source
+hostnamectl set-hostname prometheus
 
 # Edit network setting (Warning: the network card make internal)
 vi /etc/sysconfig/network-scripts/ifcfg-enp0s3
