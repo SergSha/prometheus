@@ -52,7 +52,7 @@ chmod u+x /root/prometheus/inst_set.sh
 # Skip
 # Configuration - Data sources
 # Add data source Prometheus
-# URL: http://<IP balancer>:9090
+# URL: http://localhost:9090
 # Save & test
 # В отдельной вкладке браузера зайдём на сайт Grafana по ссылке https://grafana.com/grafana/dashboards/
 # Выбираем Node Exporter Full - код 1860
