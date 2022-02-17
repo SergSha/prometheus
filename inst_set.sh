@@ -36,6 +36,8 @@ cp -f /root/distrib/prometheus-2.33.0.linux-amd64/prom{etheus,tool} /usr/local/b
 
 # Copy from directory prometheus-2.33.0.linux-amd64 directories consoles, console_libraries and file prometheus.yml to /etc/prometheus/
 cp -rf /root/distrib/prometheus-2.33.0.linux-amd64/{console{s,_libraries},prometheus.yml} /etc/prometheus/
+cp -f /root/prometheus/prometheus.yml /etc/prometheus/
+cp -f /root/prometheus/conf_upd.sh /etc/cron.daily/
 
 # Change user:group files /usr/local/bin/prometheus, /usr/local/bin/promtool and directory /etc/prometheus
 chown -Rv prometheus: /usr/local/bin/prom{etheus,tool} {/etc,/var/lib}/prometheus
