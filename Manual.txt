@@ -45,3 +45,20 @@ chmod u+x /root/prometheus/inst_set.sh
 
 # Start inst_set.sh
 /root/prometheus/inst_set.sh
+
+# Open browser anter address <IP balancer>:3000
+# Login: admin
+# Password: admin
+# Skip
+# Configuration - Data sources
+# Add data source Prometheus
+# URL: http://<IP balancer>:9090
+# Save & test
+# В отдельной вкладке браузера зайдём на сайт Grafana по ссылке https://grafana.com/grafana/dashboards/
+# Выбираем Node Exporter Full - код 1860
+# Возвращаемся к своей вкладке и в меню Create кликаем Import
+# В поле вставляем 1860 и нажимаем Load
+# Внизу выбираем Prometheus
+# Import
+
+
