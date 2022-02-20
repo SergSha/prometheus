@@ -27,18 +27,21 @@ sudo -i
 # For monitoring host may install jnettop, htop, iotop, iftop, iptraf, nmon
 # yum install -y {jnet,h,io,if}top iptraf nmon
 
-# Make pair keys
-ssh-keygen #Enter Enter Enter
-
-# Copy text of pub key and paste into GitHub:
-cat /root/.ssh/id_rsa.pub
-https://github.com/settings/keys
-
 # Install git
 yum -y install git
 
+# Connect to GitHub repo for download to host
+git clone https://github.com/SergSha/prometheus.git
+
+#------- For to upload to GitHub -------------
+# Make pair keys
+#ssh-keygen #Enter-Enter-Enter
+# Copy text of pub key and paste into GitHub:
+cat /root/.ssh/id_rsa.pub
+#https://github.com/settings/keys
 # Connect to GitHub repo (prometheus)
-git clone git@github.com:SergSha/prometheus.git
+#git clone git@github.com:SergSha/prometheus.git
+------------------------------------------------
 
 # Make the file inst_set.sh execute
 chmod u+x /root/prometheus/inst_set.sh
@@ -60,5 +63,3 @@ chmod u+x /root/prometheus/inst_set.sh
 # В поле вставляем 1860 и нажимаем Load
 # Внизу выбираем Prometheus
 # Import
-
-
