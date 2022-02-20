@@ -38,7 +38,7 @@ git clone https://github.com/SergSha/prometheus.git
 # Make pair keys
 #ssh-keygen #Enter-Enter-Enter
 # Copy text of pub key and paste into GitHub:
-cat /root/.ssh/id_rsa.pub
+#cat /root/.ssh/id_rsa.pub
 #https://github.com/settings/keys
 # Connect to GitHub repo (prometheus)
 #git clone git@github.com:SergSha/prometheus.git
