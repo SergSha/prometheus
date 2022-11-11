@@ -56,6 +56,7 @@ Enter</pre>
 <p>Start inst_set.sh:</p>
 <pre>/root/prometheus/inst_set.sh</pre>
 
+<p>========================== BROWSER ==========================</p>
 <u>
 <li>Open browser enter address <IP balancer>:3000</li>
 <li>Login: admin</li>
